@@ -52,7 +52,7 @@ export default {
         job: ""
       },
       show: true,
-      con: false,
+      con: false
     };
   },
   methods: {
@@ -60,9 +60,8 @@ export default {
       evt.preventDefault();
       axios
         .post("https://reqres.in/api/users", this.form)
-        .then(() => {
-        })
-        .catch((error) => {
+        .then(() => {})
+        .catch(error => {
           console.log(error.response);
           this.con = true;
         });
@@ -78,7 +77,7 @@ export default {
       this.$nextTick(() => {
         this.show = true;
       });
-    },
-  },
+    }
+  }
 };
 </script>
