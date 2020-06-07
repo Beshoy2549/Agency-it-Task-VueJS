@@ -5,4 +5,3 @@ export default () => {
     baseURL: "https://reqres.in/api/"
   });
 };
-//Hmady
